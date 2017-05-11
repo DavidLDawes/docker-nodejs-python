@@ -11,10 +11,13 @@ docker pull virtualsoundnw/docker-nodejs-python:latest
 
 ### Build from GitHub
 ```
-docker build -t virtualsoundnw/docker-nodejs-python github.com/beevelop/docker-nodejs-python
+docker build -t virtualsoundnw/docker-nodejs-python github.com/DavidLDawes/docker-nodejs-python
 ```
 
 ### Run image
+If you're running a server then add -p 80:80 (replacing the numbers with the actual port) to make the port available outside of the containers.
+You'll probably want to create a directory and use it from inside of the container via -v /dir/U/created:/app or something along those lines, otherwise as soon as you exit the shell the disk contents are gone.
+
 ```
 docker run -it virtualsoundnw/docker-nodejs-python bash
 ```
