@@ -7,5 +7,5 @@ RUN \
   apt-get install -y python python-dev python-pip python-virtualenv git && \
   apt-get install -y libfontconfig1 &&\
   npm update && \
-  npm install -g phantomjs casperjs && \
+  npm install -g phantomjs-prebuilt casperjs && \
   rm -rf /var/lib/apt/lists/*
